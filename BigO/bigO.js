@@ -1,4 +1,4 @@
-//time perfonrmance
+//O(n)
 
 /*
 function addUpTo(n) {
@@ -41,4 +41,37 @@ console.log(countUpToDown(10));
 let t2 = performance.now();
 console.log(`time elapsed: ${(t2 - t1) / 1000} seconds`);
 
+
+//O(n^2)
+
+function printAllPairs(n) {
+  for (var i = 0; i < n; i++) {
+    for (var j = 0; j < n; j++) {
+      console.log(i, j);
+    }
+  }
+}
+
+let t1 = performance.now();
+console.log(printAllPairs(10));
+let t2 = performance.now();
+console.log(`time elapsed: ${(t2 - t1) / 1000} seconds`);
+
+
+//example O(n)
+
+function logAtLeast5(n) {
+  for (var i = 1; i <= Math.max(5, n); i++) {
+    console.log(i);
+  }
+}
+
+//example O(1)
+function logAtLeast5(n) {
+  for (var i = 1; i <= Math.min(5, n); i++) {
+    console.log(i);
+  }
+}
+
+console.log(logAtLeast5(4));
 */
