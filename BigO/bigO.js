@@ -75,3 +75,38 @@ function logAtLeast5(n) {
 
 console.log(logAtLeast5(4));
 */
+
+//Objects
+
+let instructor = {
+  firstName: "Kelly",
+  isInstructor: true,
+  favoriteNumbers: [1, 2, 3, 4],
+};
+
+let keys = Object.keys(instructor);
+console.log(keys);
+
+let entries = Object.entries(instructor);
+console.log(entries);
+
+let hasProperty = instructor.hasOwnProperty("firstName");
+console.log(hasProperty);
+
+//Arrays
+
+//ordered lists
+
+let names = ["michael", "melisa", "andrea"];
+let values = [true, {}, [], 2, "awesome"];
+
+console.log(names);
+names.push("raj");
+console.log(names);
+names.shift();
+console.log(names);
+names.unshift("pepetonhio");
+console.log(names);
+names.pop();
+console.log(names);
+console.log(names.concat(values));
