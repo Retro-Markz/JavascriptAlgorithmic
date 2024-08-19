@@ -10,7 +10,8 @@ value squared in the second array.
 the frecuency of the values must be the same
 */
 
-//first see the 'not the best slution for this case',
+//first see the 'not the best slution for this case', for the complexity O(n^2), but is the fastest way to
+//get the solution
 
 function same(arr1, arr2) {
   if (arr1.length !== arr2.length) {
@@ -30,3 +31,13 @@ function same(arr1, arr2) {
 console.log(same([1, 2, 3], [1, 4, 9]));
 console.log(same([1, 4, 3], [1, 4, 9]));
 console.log(same([1, 2, 3, 1], [1, 4, 1, 9]));
+
+//refactores for a mor destructured solution but with O(n) complexity
+
+function same2(arr1, arr2) {
+  if (arr1.length !== arr2.length) {
+    return false;
+  }
+  let frewuency1 = {};
+  let frewuency2 = {};
+}
