@@ -33,7 +33,7 @@ console.log(same([1, 2, 3], [1, 4, 9]));
 let t2 = performance.now();
 console.log(`time elapsed: ${(t2 - t1) / 1000} seconds`);
 
-//time elapsed in proces is about 0.0013~0.009
+//time elapsed in proces is about 0.0013~0.04 s
 
 //refactores for a mor destructured solution but with O(n) complexity
 
@@ -65,6 +65,6 @@ console.log(same2([1, 2, 3], [1, 4, 9]));
 let t4 = performance.now();
 console.log(`time elapsed: ${(t4 - t3) / 1000} seconds`);
 
-//so, the second is not that 'fancy' but time elapsed is 0.00015~0.00023
+//so, the second is not that 'fancy' but time elapsed is 0.00015~0.00023 s
 
 //the goal  for me is to improve code performance
